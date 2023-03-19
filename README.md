@@ -1,4 +1,4 @@
-# Meditation App
+# Meditation App (IN PROGRESS)
 Check the app here
 
 # Description
