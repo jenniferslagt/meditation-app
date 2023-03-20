@@ -1,4 +1,156 @@
-h1 {
-  color: red;
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #AFE1AF;
+}
+
+.meditation-app {
+  font-family: Arial, Helvetica, sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.meditation-app .player-container {
+  background-color: #023020;
+  background: linear-gradient(153deg, #1e4236 0%, #012015 100%);
+  color: #DBEDDB;
+  padding: 3rem 3rem 10rem;
+  width: 100%;
+  border-radius: 0 0 1.5rem 1.5rem;
+}
+
+.meditation-app .player-container .sound-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.meditation-app .player-container .time-display {
+  font-size: 1rem;
+  font-weight: normal;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.meditation-app .player-container .play-btn {
+  background-color: transparent;
+  position: relative;
+  border: none;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.meditation-app .player-container .play-btn:hover {
+  cursor: pointer;
+}
+
+.meditation-app .player-container .play-btn .play-icon, .meditation-app .player-container .play-btn svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.meditation-app .player-container .play-btn .play-icon {
+  width: 2rem;
+}
+
+.meditation-app .player-container .play-btn svg {
+  width: 4rem;
+  height: auto;
+}
+
+.meditation-app .content-wrapper {
+  width: 18rem;
+}
+
+.meditation-app .content-wrapper .video-container {
+  position: relative;
+  z-index: 1;
+  margin: -5rem 0 2rem;
+}
+
+.meditation-app .content-wrapper .video-container .video {
+  width: 100%;
+  height: 18rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 1.5rem;
+  -webkit-box-shadow: 0 2.5rem 4rem -2.5rem #023020;
+          box-shadow: 0 2.5rem 4rem -2.5rem #023020;
+}
+
+.meditation-app .content-wrapper .time-btn-container .time-btn {
+  font-size: 0.75rem;
+  font-weight: bold;
+  background-color: transparent;
+  color: #023020;
+  padding: 0.25rem 0.5rem;
+  border: 2px solid #023020;
+  border-radius: 0.75rem;
+}
+
+.meditation-app .content-wrapper .time-btn-container .time-btn:not(:last-child) {
+  margin-right: 0.5rem;
+}
+
+.meditation-app .content-wrapper .time-btn-container .time-btn:hover {
+  background-color: #023020;
+  color: #DBEDDB;
+  cursor: pointer;
+}
+
+.meditation-app .content-wrapper .sound-container {
+  margin: 2rem 0;
+}
+
+.meditation-app .content-wrapper .sound-container .title {
+  color: #023020;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.meditation-app .content-wrapper .sound-container .sound-btn {
+  background-color: transparent;
+  font-size: 0.75rem;
+  font-weight: bold;
+  color: #023020;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: none;
+}
+
+.meditation-app .content-wrapper .sound-container .sound-btn:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.meditation-app .content-wrapper .sound-container .sound-btn .btn-icon {
+  color: #023020;
+  width: 1.5rem;
+  height: auto;
+  margin-right: 1rem;
 }
 /*# sourceMappingURL=styles.css.map */
