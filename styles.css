@@ -130,6 +130,11 @@ body {
   cursor: pointer;
 }
 
+.meditation-app .content-wrapper .time-btn-container .time-btn.is-active {
+  background-color: #023020;
+  color: #DBEDDB;
+}
+
 .meditation-app .content-wrapper .sound-container {
   margin: 2rem 0;
 }
@@ -156,10 +161,17 @@ body {
       -ms-flex-align: center;
           align-items: center;
   border: none;
+  -webkit-transition: font-size 250ms;
+  transition: font-size 250ms;
 }
 
 .meditation-app .content-wrapper .sound-container .sound-btn:not(:last-child) {
   margin-bottom: 1rem;
+}
+
+.meditation-app .content-wrapper .sound-container .sound-btn.is-active {
+  color: black;
+  font-size: 1rem;
 }
 
 .meditation-app .content-wrapper .sound-container .sound-btn .btn-icon {
