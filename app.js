@@ -40,7 +40,7 @@ const reset = () => {
 	sound.pause();
 	sound.currentTime = 0;
 	video.pause();
-	playIcon.src = './svgs/play.svg';
+	playIcon.src = './icons/play.svg';
 }
 
 const playOrPauseSound = () => {
@@ -48,11 +48,11 @@ const playOrPauseSound = () => {
 	if (sound.paused) {
 		sound.play();
 		video.play();
-		playIcon.src = './svgs/pause.svg';
+		playIcon.src = './icons/pause.svg';
 	} else {
 		sound.pause();
 		video.pause();
-		playIcon.src = './svgs/play.svg';
+		playIcon.src = './icons/play.svg';
 	}
 }
 
