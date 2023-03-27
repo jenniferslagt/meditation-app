@@ -32,47 +32,53 @@ body {
   border-radius: 0 0 1.5rem 1.5rem;
 }
 
-.meditation-app .player-container .sound-name {
-  font-size: 1.5rem;
-  font-weight: bold;
-  text-align: center;
-  margin-bottom: 1.5rem;
+.meditation-app .player-container .display-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.meditation-app .player-container .time-display {
-  font-size: 1rem;
-  font-weight: normal;
-  text-align: center;
-  margin-bottom: 2rem;
-}
-
-.meditation-app .player-container .play-btn {
+.meditation-app .player-container .display-wrapper .play-btn {
   background-color: transparent;
   position: relative;
+  width: 4rem;
+  margin-right: 1rem;
   border: none;
-  width: 100%;
-  margin: 0 auto;
 }
 
-.meditation-app .player-container .play-btn:hover {
+.meditation-app .player-container .display-wrapper .play-btn:hover {
   cursor: pointer;
 }
 
-.meditation-app .player-container .play-btn .play-icon, .meditation-app .player-container .play-btn svg {
+.meditation-app .player-container .display-wrapper .play-btn .play-icon, .meditation-app .player-container .display-wrapper .play-btn svg {
   position: absolute;
   top: 50%;
   left: 50%;
+}
+
+.meditation-app .player-container .display-wrapper .play-btn .play-icon {
+  width: 1.5rem;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
 }
 
-.meditation-app .player-container .play-btn .play-icon {
-  width: 2rem;
+.meditation-app .player-container .display-wrapper .play-btn svg {
+  width: 100%;
+  height: auto;
+  -webkit-transform: translate(-50%, -50%) rotate(-90deg);
+          transform: translate(-50%, -50%) rotate(-90deg);
 }
 
-.meditation-app .player-container .play-btn svg {
-  width: 4rem;
-  height: auto;
+.meditation-app .player-container .display-wrapper .time-display {
+  font-size: 1rem;
+  font-weight: normal;
+  text-align: center;
 }
 
 .meditation-app .content-wrapper {
@@ -82,7 +88,16 @@ body {
 .meditation-app .content-wrapper .video-container {
   position: relative;
   z-index: 1;
-  margin: -5rem 0 2rem;
+  margin: -6rem 0 2rem;
+}
+
+.meditation-app .content-wrapper .video-container .sound-name {
+  color: white;
+  position: absolute;
+  left: 1rem;
+  bottom: 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
 .meditation-app .content-wrapper .video-container .video {
