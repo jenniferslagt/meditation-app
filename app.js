@@ -63,6 +63,12 @@ const selectDuration = () => {
 		option.addEventListener('click', () => {
 			duration = option.getAttribute('data-time');
 			timeDisplay.textContent = `${Math.floor(duration / 60)}:${Math.floor(duration % 60)}`;
+			
+			// Show selected button
+			timeBtns.forEach(btn => {
+				btn.classList.remove('is-active');
+			})
+			option.classList.add('is-active');
 		})
 	})
 }
@@ -79,6 +85,12 @@ const changeSound = () => {
 			soundName.textContent = option.textContent;
 			reset();
 			playOrPauseSound();
+
+			// Show selected sound
+			soundBtns.forEach(btn => {
+				btn.classList.remove('is-active');
+			})
+			option.classList.add('is-active');
 		})
 	});
 }
