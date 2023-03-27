@@ -3,7 +3,8 @@ const sound = playerContainer.querySelector(".sound");
 const timeDisplay = playerContainer.querySelector(".time-display");
 const playBtn = playerContainer.querySelector(".play-btn");
 const playIcon = playBtn.querySelector(".play-icon");
-const video = document.querySelector(".video");
+const videoContainer = document.querySelector('.video-container');
+const video = videoContainer.querySelector(".video");
 let duration = 600;
 
 const animation = () => {
@@ -69,7 +70,7 @@ const selectDuration = () => {
 const changeSound = () => {
 	const soundContainer = document.querySelector('.sound-container')
 	const soundBtns = soundContainer.querySelectorAll(".sound-btn");
-	const soundName = playerContainer.querySelector('.sound-name');
+	const soundName = videoContainer.querySelector('.sound-name');
 
 	soundBtns.forEach(option => {
 		option.addEventListener('click', () => {
