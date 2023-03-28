@@ -1,6 +1,5 @@
 # Meditation App
-<img src="https://user-images.githubusercontent.com/45489420/228187123-b0149ca8-b461-4a5c-be41-5a8f22af3178.png" style="width: 280px; height: 100%;"> 
-https://user-images.githubusercontent.com/45489420/228187123-b0149ca8-b461-4a5c-be41-5a8f22af3178.png
+<img src="https://user-images.githubusercontent.com/45489420/228187123-b0149ca8-b461-4a5c-be41-5a8f22af3178.png" style="width: 280px; height: 100%;">
 
 Check the app [here](https://jenniferslagt.github.io/meditation-app/)
 
