@@ -1,7 +1,6 @@
 # Meditation App
-![Schermafbeelding 2023-03-28 om 11 07 07](https://user-images.githubusercontent.com/45489420/228187123-b0149ca8-b461-4a5c-be41-5a8f22af3178.png)
-
-<img src="https://user-images.githubusercontent.com/45489420/228187123-b0149ca8-b461-4a5c-be41-5a8f22af3178.png" width="280" height="100%">
+<img src="https://user-images.githubusercontent.com/45489420/228187123-b0149ca8-b461-4a5c-be41-5a8f22af3178.png" style="width: 280px; height: 100%;"> 
+https://user-images.githubusercontent.com/45489420/228187123-b0149ca8-b461-4a5c-be41-5a8f22af3178.png
 
 Check the app [here](https://jenniferslagt.github.io/meditation-app/)
 
